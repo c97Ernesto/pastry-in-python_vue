@@ -1,5 +1,5 @@
 [project]
-name = "admin"
+name = "web"
 version = "0.1.0"
 description = ""
 authors = [
@@ -12,8 +12,11 @@ dependencies = [
 ]
 
 [tool.poetry]
-packages = [{include = "admin", from = "src"}]
+packages = [{include = "web", from = "src"}]
 
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.4.2"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
